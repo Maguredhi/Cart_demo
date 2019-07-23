@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  resources :products
   root 'products#index'
+  
+  resources :products do
+      member do
+        post :checkout
+      end
+    end 
 
   resource :cart, only:[:show, :destroy] do
     collection do
