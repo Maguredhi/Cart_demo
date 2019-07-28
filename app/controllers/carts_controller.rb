@@ -1,4 +1,6 @@
 class CartsController < ApplicationController
+  include CartsHelper
+  include Payable
 
   def add
     current_cart.add_item(params[:id])
@@ -14,5 +16,6 @@ class CartsController < ApplicationController
 
   def checkout
     @order = Order.new
+    @token = gateway.client_token.generate
   end
 end

@@ -28,6 +28,8 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap', '~> 4.3.1'
+gem 'braintree', '~> 2.97'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
