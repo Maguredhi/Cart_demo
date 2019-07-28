@@ -1,4 +1,6 @@
 class Order < ApplicationRecord
+  has_many :order_item
+
   include AASM
 
   aasm column: :state do
